@@ -24,8 +24,19 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+    <style>
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+
+    @vite('resources/css/app.css')
 
 </head>
 
@@ -37,25 +48,28 @@
             <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">Dar Der Dor</h1>
+                <h1 class="sitename ms-5">Dar Der Dor</h1>
                 <span>.</span>
             </a>
 
             <!--  -->
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#" class="">Home<br></a></li>
-                    <li><a href="#" class="">About</a></li>
-                    <li><a href="#" class="">Our Products</a></li>
-                    <li><a href="" class="">Cek Pembayaran</a></li>
+                    <li><a href="#" class="text-lg text-black">Home<br></a></li>
+                    <li><a href="#" class="text-lg text-black">About</a></li>
+                    <li><a href="#" class="text-lg text-black">Our Products</a></li>
+                    <li><a href="" class="text-lg text-black">Cek Pembayaran</a></li>
                     <li><a class="btn-getstarted" href="">Order Now</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a class="btn-getstarted" href="reservasi.php">Login</a>
+            <div>
 
-
+            </div>
+            
         </div>
+        <a class="btn-getstarted" href="reservasi.php">Login</a>
+        <a class="btn-getstarted ms-3 me-5 " href="reservasi.php">Register</a>
     </header>
 
     @yield('content')

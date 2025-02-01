@@ -2,9 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Peralatan;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeder\PeralatanSeeder;
+use Database\Seeders\PeralatanSeeder as SeedersPeralatanSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
+        $this->call(SeedersPeralatanSeeder::class);
 
         User::factory()->create([
             'name' => 'Test User',

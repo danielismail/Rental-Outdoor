@@ -31,7 +31,7 @@ class PeralatanSeeder extends Seeder
                 'deskripsi' => json_encode(['Tenda Kapasitas 4 Orang', 'Sleeping Bag 2', 'Matras 2']),
                 'ketersediaan' => 2,
                 'harga' => 800000.00,
-                'foto' => null,
+                'foto' => url('https://www.nusaoutdoor.com/wp-content/uploads/2024/02/eiger-flash-3.webp'),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
